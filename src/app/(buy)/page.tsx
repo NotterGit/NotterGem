@@ -258,14 +258,16 @@ function PlanCard({
                         <ul className="list-disc pl-4 space-y-0.5">
                             <li>До {limits.documents} заметок</li>
                             <li>До {limits.publicDocuments} публичных страниц</li>
+                            <li>До {limits.aiGenerationsPerWeek} генераций QualAI в неделю</li>
                             <li>Загрузка до {limits.uploadMb} МБ</li>
+                            <li>Хранение в архиве до {limits.archiveRetentionDays} дней</li>
                             {title === "Amber" ? (
                                 <li>Сокращенные ссылки</li>
                             ) : (
                                 <>
                                     <li>Кастомные ссылки</li>
                                     <li>Без упоминаний Notter</li>
-                                    <li>Экспорт заметок в JSON</li>
+                                    <li>Экспорт и импорт заметок в JSON</li>
                                 </>
                             )}
                         </ul>

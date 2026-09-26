@@ -4,6 +4,8 @@ export type NotterLimits = {
     documents: number
     publicDocuments: number
     uploadMb: number
+    aiGenerationsPerWeek: number
+    archiveRetentionDays: number
 }
 
 export type TodoLimits = {
@@ -20,13 +22,17 @@ export type PlanLimits = {
     documents: number
     publicDocuments: number
     uploadMb: number
+    aiGenerationsPerWeek: number
+    archiveRetentionDays: number
     todo: TodoLimits
 }
 
 export const FREE_LIMITS: PlanLimits = {
-    documents: 75,
+    documents: 50,
     publicDocuments: 10,
     uploadMb: 1,
+    aiGenerationsPerWeek: 10,
+    archiveRetentionDays: 7,
     todo: {
         boards: 5,
         publicBoards: 3,
@@ -42,6 +48,8 @@ export const AMBER_PERSONAL_LIMITS: PlanLimits = {
     documents: 200,
     publicDocuments: 100,
     uploadMb: 3,
+    aiGenerationsPerWeek: 50,
+    archiveRetentionDays: 30,
     todo: {
         boards: 25,
         publicBoards: 25,
@@ -57,6 +65,8 @@ export const AMBER_TEAM_LIMITS: PlanLimits = {
     documents: 500,
     publicDocuments: 250,
     uploadMb: 3,
+    aiGenerationsPerWeek: 100,
+    archiveRetentionDays: 30,
     todo: {
         boards: 50,
         publicBoards: 50,
@@ -72,6 +82,8 @@ export const DIAMOND_LIMITS: PlanLimits = {
     documents: 1000,
     publicDocuments: 1000,
     uploadMb: 10,
+    aiGenerationsPerWeek: 250,
+    archiveRetentionDays: 90,
     todo: {
         boards: "Неограниченно",
         publicBoards: 100,
