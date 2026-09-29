@@ -261,6 +261,7 @@ function PlanCard({
                             <li>До {limits.aiGenerationsPerWeek} генераций QualAI в неделю</li>
                             <li>Загрузка до {limits.uploadMb} МБ</li>
                             <li>Хранение в архиве до {limits.archiveRetentionDays} дней</li>
+                            <li>Расширенный журнал аудита</li>
                             {title === "Amber" ? (
                                 <li>Сокращенные ссылки</li>
                             ) : (
@@ -268,6 +269,7 @@ function PlanCard({
                                     <li>Кастомные ссылки</li>
                                     <li>Без упоминаний Notter</li>
                                     <li>Экспорт и импорт заметок в JSON</li>
+                                    <li>Экспорт журнала аудита</li>
                                 </>
                             )}
                         </ul>
