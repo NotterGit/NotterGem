@@ -258,7 +258,7 @@ function PlanCard({
                         <ul className="list-disc pl-4 space-y-0.5">
                             <li>До {limits.documents} заметок</li>
                             <li>До {limits.publicDocuments} публичных страниц</li>
-                            <li>До {limits.aiGenerationsPerWeek} генераций QualAI в неделю</li>
+                            <li>До {limits.aiGenerationsPerWeek} генераций Q.AI в неделю</li>
                             <li>Загрузка до {limits.uploadMb} МБ</li>
                             <li>Хранение в архиве до {limits.archiveRetentionDays} дней</li>
                             <li>Расширенный журнал аудита</li>
